@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div>
+    <h1>Calculator</h1>
+  </div>
+
+  <table class="calculator">
+ 
+    <tr>
+      <td colspan="5"><input class="input_field_text" type="text" name="display" id="ID" /></td>
+    </tr>
+ 
+    <tr>
+      <td><input type="button" value="c" id="txtgrey" onclick="clr()" /> </td>
+      <td><input type="button" value="<--" id="txtgrey" onclick="backspace()" /> </td>
+      <td><input type="button" value="=" id="txtgrey" onclick="solve()" /> </td>
+      <td><input type="button" value="π" id="txtyellow" onclick="pivalue()" /> </td>
+      <td><input type="button" value="%" onclick="percent()" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" id="txtblack" onclick="display('7')" /> </td>
+      <td><input type="button" value="8" id="txtblack" onclick="display('8')" /> </td>
+      <td><input type="button" value="9" id="txtblack" onclick="display('9')" /> </td>
+      <td><input type="button" value="x^" id="txtyellow" onclick="display('^')" /> </td>
+      <td><input type="button" value="/" onclick="display('/')" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" id="txtblack" onclick="display('4')" /> </td>
+      <td><input type="button" value="5" id="txtblack" onclick="display('5')" /> </td>
+      <td><input type="button" value="6" id="txtblack" onclick="display('6')" /> </td>
+      <td><input type="button" value="ln" id="txtyellow" onclick="logvalue()" /> </td>
+      <td><input type="button" value="*" onclick="display('*')" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" id="txtblack" onclick="display('1')" /> </td>
+      <td><input type="button" value="2" id="txtblack" onclick="display('2')" /> </td>
+      <td><input type="button" value="3" id="txtblack" onclick="display('3')" /> </td>
+      <td><input type="button" value="√" id="txtyellow" onclick="squarroot()" /> </td>
+      <td><input type="button" value="-" onclick="display('-')" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="±" onclick="display('-')" /> </td>
+      <td><input type="button" value="0" id="txtblack" onclick="display('0')" /> </td>
+      <td><input type="button" value="." onclick="display('.')" /> </td>
+      <td><input type="button" value="x2" id="txtyellow" onclick="square()" /> </td>
+      <td><input type="button" value="+" onclick="display('+')" /> </td>
+    </tr>
+    <tr>
+      <td><input type="button" value="(" onclick="display('(')"/> </td>
+      <td><input type="button" value=")" onclick="display(')')"/> </td>
+      <td><input type="button" value="sin" onclick="sin()" /> </td>
+      <td><input type="button" value="cos" onclick="cos()" /> </td>
+      <td><input type="button" value="tan" onclick="tan()" /> </td>
+    </tr>
+ 
+  </table>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+<footer>
+  <p>&copy; 2022 Vaishali </p>
+</footer>
+
+</html>
